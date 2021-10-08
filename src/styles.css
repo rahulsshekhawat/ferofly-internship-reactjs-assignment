@@ -63,7 +63,7 @@ ul {
 .img-container {
   width: 70vw;
   height: 80vh;
-  background-image: url("/Images/HomePageImage.jpg");
+  background-image: url("./Images/HomePageImage.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
