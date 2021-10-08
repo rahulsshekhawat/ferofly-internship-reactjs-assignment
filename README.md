@@ -1,2 +1,2 @@
-# ferofly-internship-reactjs-assignment
+# Ferofly-assignment
 Created with CodeSandbox
