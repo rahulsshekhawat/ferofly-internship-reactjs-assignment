@@ -9,7 +9,7 @@ export default function App() {
     <div className="App">
       <Navbar />
       <div className="chat">
-        <BsChatTextFill color="white" size="2rem" />
+        <BsChatTextFill color="white" />
       </div>
       <SocialMediaComp />
       <HomePage />

@@ -14,18 +14,16 @@ li a.active {
   color: #928f8f;
 }
 li {
-  margin: 25px 10px;
+  margin: 1.5rem 1rem;
 }
-ul {
-  width: 80%;
-  margin-left: 10%;
+.nav-links {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .btn {
-  padding: 10px;
+  padding: 0.8rem 1.5rem;
   border: 1px solid white;
   background-color: #242323;
   color: white;
@@ -39,6 +37,9 @@ ul {
   height: 13vh;
   background-color: #242323;
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -58,12 +59,11 @@ ul {
 }
 .page-text p {
   font-size: 1.5rem;
-  margin-top: 5px;
+  margin-top: 1rem;
 }
 .img-container {
   width: 70vw;
   height: 80vh;
-  background-image: url("./Images/HomePageImage.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -75,6 +75,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .person-counter {
   height: 50%;
@@ -125,6 +126,7 @@ span.counter-btn .disabled {
 }
 .App div.chat {
   background-color: #242323;
+  font-size: 2rem;
   height: 10%;
   width: 5%;
   display: flex;
@@ -143,6 +145,7 @@ span.counter-btn .disabled {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .App .social-media-warpper .social-media-icons {
   font-size: 1.8rem;
@@ -172,4 +175,141 @@ span.counter-btn .disabled {
 .date-picker-wrapper .date-picker .custom-input p,
 .calender-icon {
   margin: 0 1rem;
+}
+.navbar .navbar-btn {
+  display: flex;
+}
+.navbar .navbar-btn .mobile-menu,
+.mobile-nav {
+  display: none;
+}
+
+@media screen and (max-width: 1065px) {
+  li a,
+  .btn {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 875px) {
+  li a,
+  .btn {
+    font-size: 0.6rem;
+  }
+  .page-text h1 {
+    font-size: 2rem;
+  }
+  .page-text p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+@media screen and (max-width: 805px) {
+  li {
+    margin: 1rem 0.6rem;
+  }
+  .btn {
+    padding: 0.4rem 1rem;
+  }
+  .page-text {
+    margin-top: 15%;
+    margin-bottom: 8%;
+  }
+}
+@media screen and (max-width: 660px) {
+  li {
+    margin: 0.7rem 0.4rem;
+  }
+  .btn {
+    padding: 0.3rem 0.7rem;
+  }
+  .page-text {
+    margin-top: 16%;
+  }
+  .counts span {
+    margin: 0 0.5rem;
+  }
+  .img-container {
+    width: 100vw;
+    height: 60vh;
+  }
+  .App .social-media-warpper {
+    background-color: white;
+    width: 30px;
+    top: 40%;
+    right: 0;
+  }
+  .App .social-media-warpper .social-media-icons {
+    font-size: 1.2rem;
+  }
+  .App div.chat {
+    height: 7%;
+    width: 3%;
+    left: 0;
+  }
+}
+@media screen and (max-width: 590px) {
+  .navbar .navbar-btn .mobile-menu {
+    display: block;
+  }
+  .navbar {
+    height: 10vh;
+  }
+  li a,
+  .btn {
+    font-size: 1rem;
+  }
+  li {
+    margin: 0.2rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .navbar .navbar-btn .mobile-menu {
+    display: block;
+    margin: 0 2rem;
+    padding: 0 0.3rem;
+    padding-top: 0.4rem;
+    outline: 1px solid white;
+    color: white;
+    cursor: pointer;
+  }
+  ul.mobile-nav {
+    position: absolute;
+    list-style-type: none;
+    top: 90%;
+    width: 100vw;
+    height: 80vh;
+    background-color: rgba(36, 35, 35, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .App div.chat {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    left: 90%;
+    bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  .person-counter {
+    margin: 0.5rem 0.5rem;
+    width: 34%;
+  }
+  .date-picker-wrapper {
+    margin: 0.5rem;
+  }
+  .booking div.search-btn button {
+    margin: 1.5rem 0;
+  }
+  .App .social-media-warpper {
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    top: 140%;
+    left: 25%;
+    display: flex;
+    flex-direction: row;
+  }
 }
