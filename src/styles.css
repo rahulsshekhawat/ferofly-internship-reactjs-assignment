@@ -65,8 +65,9 @@ li {
   width: 70vw;
   height: 80vh;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
+  background-size: cover;
 }
 .booking {
   width: 65vw;
@@ -292,7 +293,7 @@ ul.mobile-nav {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    left: 90%;
+    left: 85%;
     bottom: 2rem;
     font-size: 1.5rem;
   }
