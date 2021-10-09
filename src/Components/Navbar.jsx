@@ -5,9 +5,13 @@ const Navbar = () => {
   const [isClicked, toggleClick] = useState(false);
 
   const handleClick = () => toggleClick(!isClicked);
+  let navClass = "nav-links";
+  if (isClicked === true) {
+    navClass = "mobile-nav";
+  }
   return (
     <nav className="navbar">
-      <ul className={isClicked ? "nav-links" : "mobile-nav"}>
+      <ul className={navClass}>
         <li className="link">
           <a className="active" href="#">
             HOME
@@ -38,9 +42,9 @@ const Navbar = () => {
         </a>
         <div className="mobile-menu">
           {isClicked ? (
-            <GiHamburgerMenu onClick={handleClick} />
-          ) : (
             <MdClear onClick={handleClick} />
+          ) : (
+            <GiHamburgerMenu onClick={handleClick} />
           )}
         </div>
       </div>

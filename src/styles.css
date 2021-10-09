@@ -180,7 +180,7 @@ span.counter-btn .disabled {
   display: flex;
 }
 .navbar .navbar-btn .mobile-menu,
-.mobile-nav {
+ul.mobile-nav {
   display: none;
 }
 
@@ -248,6 +248,9 @@ span.counter-btn .disabled {
   }
 }
 @media screen and (max-width: 590px) {
+  .page-text {
+    margin-top: 18%;
+  }
   .navbar .navbar-btn .mobile-menu {
     display: block;
   }
@@ -307,7 +310,7 @@ span.counter-btn .disabled {
     position: absolute;
     width: 50%;
     height: 10%;
-    top: 140%;
+    top: 150%;
     left: 25%;
     display: flex;
     flex-direction: row;
